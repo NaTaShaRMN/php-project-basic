@@ -152,11 +152,13 @@
 						</tr>
 					</table>
 					<div class="rating center">
-						<span>☆</span>
-						<span class="rated">☆</span>
-						<span class="rated">☆</span>
-						<span class="rated">☆</span>
-						<span class="rated">☆</span>
+						<?php for ($j = 5; $j > 0; $j--) { ?>
+							<span 
+								<?php if (isset($star) && ($star >= $j))
+										echo 'class="rated"';
+								 ?> >
+							☆</span>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
@@ -184,11 +186,13 @@
 						</tr>
 					</table>
 					<div class="rating center">
-						<span>☆</span>
-						<span class="rated">☆</span>
-						<span class="rated">☆</span>
-						<span class="rated">☆</span>
-						<span class="rated">☆</span>
+						<?php for ($j = 5; $j > 0; $j--) { ?>
+							<span 
+								<?php if (isset($star) && ($star >= $j))
+										echo 'class="rated"';
+								 ?> >
+							☆</span>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
@@ -300,6 +304,7 @@
 				</div>
 
 				<div class="box-content">
+					<?php for ($i=0; $i < 4; $i++) { ?>
 					<div class="item">
 						<a href=""><img class="lazy" data-src="images/img_06.png" width="178" height="205"></a>
 
@@ -311,73 +316,23 @@
 							</tr>
 						</table>
 						<div class="rating center">
-							<span>☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
+							<?php for ($j = 5; $j > 0; $j--) { ?>
+								<span 
+									<?php if (isset($star) && ($star >= $j))
+											echo 'class="rated"';
+									 ?> >
+								☆</span>
+							<?php } ?>
 						</div>
 					</div>
-
-					<div class="item">
-						<a href=""><img class="lazy" data-src="images/img_08.png" width="178" height="205"></a>
-
-						<p class="box-content-text center"><a href="">Lorem ipsum dolor</a></p>
-						<table class="price-item">
-							<tr>
-								<td class="price-through">$100.00</td>
-								<td class="price-offer">$90.00</td>
-							</tr>
-						</table>
-						<div class="rating center">
-							<span>☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-						</div>
-					</div>
-
-					<div class="item">
-						<a href=""><img class="lazy" data-src="images/img_10.png" width="178" height="205"></a>
-
-						<p class="box-content-text center"><a href="">Lorem ipsum dolor</a></p>
-						<table class="price-item">
-							<tr>
-								<td class="price-through">$100.00</td>
-								<td class="price-offer">$90.00</td>
-							</tr>
-						</table>
-						<div class="rating center">
-							<span>☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-						</div>
-					</div>
-
-					<div class="item">
-						<a href=""><img class="lazy" data-src="images/img_12.png" width="178" height="205"></a>
-
-						<p class="box-content-text center"><a href="">Lorem ipsum dolor</a></p>
-						<table class="price-item">
-							<tr>
-								<td class="price-through">$100.00</td>
-								<td class="price-offer">$90.00</td>
-							</tr>
-						</table>
-						<div class="rating center">
-							<span>☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-						</div>
-					</div>
+					<?php } ?>
 				</div>
 			</div>
+			
 
+
+
+			<?php for ($i=0; $i < 2; $i++) { ?>
 			<div class="mini-column box" style="background-image: url(images/slash-img-2.png);">
 				<div class="right">
 					<img src="images/2016.png" alt="2016">
@@ -386,15 +341,9 @@
 					<span class="triangle"></span>
 				</div>
 			</div>
+			<?php } ?>
 
-			<div class="mini-column box" style="background-image: url(images/slash-img-1.png);">
-				<div class="right">
-					<img src="images/2016.png" alt="2016">
-					<div class="line"><a href="" class="cool-link">Buy Now</a></div>
-					<div class="line">*on select items only</div>
-					<span class="triangle"></span>
-				</div>
-			</div>
+
 			
 			<div class="box box-padding box-product">
 				<div class="top-box">
@@ -413,6 +362,7 @@
 				</div>
 
 				<div class="box-content">
+					<?php for ($i=0; $i < 4; $i++) { ?>
 					<div class="item">
 						<a href=""><img class="lazy" data-src="images/img_23.png" width="178" height="205"></a>
 
@@ -424,71 +374,16 @@
 							</tr>
 						</table>
 						<div class="rating center">
-							<span>☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
+							<?php for ($j = 5; $j > 0; $j--) { ?>
+								<span 
+									<?php if (isset($star) && ($star >= $j))
+											echo 'class="rated"';
+									 ?> >
+								☆</span>
+							<?php } ?>
 						</div>
 					</div>
-
-
-					<div class="item">
-						<a href=""><img class="lazy" data-src="images/img_24.png" width="178" height="205"></a>
-
-						<p class="box-content-text center"><a href="">Lorem ipsum dolor</a></p>
-						<table class="price-item">
-							<tr>
-								<td class="price-through">$100.00</td>
-								<td class="price-offer">$90.00</td>
-							</tr>
-						</table>
-						<div class="rating center">
-							<span>☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-						</div>
-					</div>
-
-					<div class="item">
-						<a href=""><img class="lazy" data-src="images/img_25.png" width="178" height="205"></a>
-
-						<p class="box-content-text center"><a href="">Lorem ipsum dolor</a></p>
-						<table class="price-item">
-							<tr>
-								<td class="price-through">$100.00</td>
-								<td class="price-offer">$90.00</td>
-							</tr>
-						</table>
-						<div class="rating center">
-							<span>☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-						</div>
-					</div>
-
-					<div class="item">
-						<a href=""><img class="lazy" data-src="images/img_27.png" width="178" height="205"></a>
-
-						<p class="box-content-text center"><a href="">Lorem ipsum dolor</a></p>
-						<table class="price-item">
-							<tr>
-								<td class="price-through">$100.00</td>
-								<td class="price-offer">$90.00</td>
-							</tr>
-						</table>
-						<div class="rating center">
-							<span>☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-							<span class="rated">☆</span>
-						</div>
-					</div>
+					<?php } ?>
 				</div>
 			</div>
 
@@ -516,6 +411,7 @@
 				</div>
 
 				<div class="box-content">
+					<?php for ($i=0; $i < 6; $i++) { ?>
 					<div class="item">
 						<div class="left-item">
 							<a href=""><img class="lazy" data-src="images/img2_03.png" width="87" height="82"></a>
@@ -530,141 +426,23 @@
 								</tr>
 							</table>
 							<div class="rating left">
-								<span>☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
+								<?php for ($j = 5; $j > 0; $j--) { ?>
+									<span 
+										<?php if (isset($star) && ($star >= $j))
+												echo 'class="rated"';
+										 ?> >
+									☆</span>
+								<?php } ?>
 							</div>
 						</div>
 					</div>
+					<?php } ?>
 
-					<div class="item">
-						<div class="left-item">
-							<a href=""><img class="lazy" data-src="images/img2_05.png" width="87" height="82"></a>
-						</div>
-
-						<div class="right-item">
-							<p class="box-content-text"><a href="">Lorem ipsum dolor</a></p>
-							<table class="price-item">
-								<tr>
-									<td class="price-through">$100.00</td>
-									<td class="price-offer">$90.00</td>
-								</tr>
-							</table>
-							<div class="rating left">
-								<span>☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="item">
-						<div class="left-item">
-							<a href=""><img class="lazy" data-src="images/img2_08.png" width="87" height="82"></a>
-						</div>
-
-						<div class="right-item">
-							<p class="box-content-text"><a href="">Lorem ipsum dolor</a></p>
-							<table class="price-item">
-								<tr>
-									<td class="price-through">$100.00</td>
-									<td class="price-offer">$90.00</td>
-								</tr>
-							</table>
-							<div class="rating left">
-								<span>☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="item">
-						<div class="left-item">
-							<a href=""><img class="lazy" data-src="images/img2_13.png" width="87" height="82"></a>
-						</div>
-
-						<div class="right-item">
-							<p class="box-content-text"><a href="">Lorem ipsum dolor</a></p>
-							<table class="price-item">
-								<tr>
-									<td class="price-through">$100.00</td>
-									<td class="price-offer">$90.00</td>
-								</tr>
-							</table>
-							<div class="rating left">
-								<span>☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="item">
-						<div class="left-item">
-							<a href=""><img class="lazy" data-src="images/img2_14.png" width="87" height="82"></a>
-						</div>
-
-						<div class="right-item">
-							<p class="box-content-text"><a href="">Lorem ipsum dolor</a></p>
-							<table class="price-item">
-								<tr>
-									<td class="price-through">$100.00</td>
-									<td class="price-offer">$90.00</td>
-								</tr>
-							</table>
-							<div class="rating left">
-								<span>☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="item">
-						<div class="left-item">
-							<a href=""><img class="lazy" data-src="images/img2_15.png" width="87" height="82"></a>
-						</div>
-
-						<div class="right-item">
-							<p class="box-content-text"><a href="">Lorem ipsum dolor</a></p>
-							<table class="price-item">
-								<tr>
-									<td class="price-through">$100.00</td>
-									<td class="price-offer">$90.00</td>
-								</tr>
-							</table>
-							<div class="rating left">
-								<span>☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-								<span class="rated">☆</span>
-							</div>
-						</div>
-					</div>
-
-			
-
-
-
-			
 					
 				</div>
 			</div>
 		</div>
 		<!-- end right column -->
-
 	</div>
 	
 
