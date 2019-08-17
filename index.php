@@ -1,3 +1,15 @@
+<?php 
+function parseStarGroup($star){
+	for ($j = 5; $j > 0; $j--) {
+		echo '<span';
+			 if (isset($star) && ($star >= $j))
+					echo ' class="rated"';
+		echo '>'.'☆</span>';
+	} 
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,13 +164,7 @@
 						</tr>
 					</table>
 					<div class="rating center">
-						<?php for ($j = 5; $j > 0; $j--) { ?>
-							<span 
-								<?php if (isset($star) && ($star >= $j))
-										echo 'class="rated"';
-								 ?> >
-							☆</span>
-						<?php } ?>
+						<?php parseStarGroup(4); ?>
 					</div>
 				</div>
 			</div>
@@ -186,13 +192,7 @@
 						</tr>
 					</table>
 					<div class="rating center">
-						<?php for ($j = 5; $j > 0; $j--) { ?>
-							<span 
-								<?php if (isset($star) && ($star >= $j))
-										echo 'class="rated"';
-								 ?> >
-							☆</span>
-						<?php } ?>
+						<?php parseStarGroup(4); ?>
 					</div>
 				</div>
 			</div>
@@ -316,13 +316,7 @@
 							</tr>
 						</table>
 						<div class="rating center">
-							<?php for ($j = 5; $j > 0; $j--) { ?>
-								<span 
-									<?php if (isset($star) && ($star >= $j))
-											echo 'class="rated"';
-									 ?> >
-								☆</span>
-							<?php } ?>
+							<?php parseStarGroup(4); ?>
 						</div>
 					</div>
 					<?php } ?>
@@ -374,13 +368,7 @@
 							</tr>
 						</table>
 						<div class="rating center">
-							<?php for ($j = 5; $j > 0; $j--) { ?>
-								<span 
-									<?php if (isset($star) && ($star >= $j))
-											echo 'class="rated"';
-									 ?> >
-								☆</span>
-							<?php } ?>
+							<?php parseStarGroup(4); ?>
 						</div>
 					</div>
 					<?php } ?>
@@ -426,13 +414,7 @@
 								</tr>
 							</table>
 							<div class="rating left">
-								<?php for ($j = 5; $j > 0; $j--) { ?>
-									<span 
-										<?php if (isset($star) && ($star >= $j))
-												echo 'class="rated"';
-										 ?> >
-									☆</span>
-								<?php } ?>
+								<?php parseStarGroup(4); ?>
 							</div>
 						</div>
 					</div>
